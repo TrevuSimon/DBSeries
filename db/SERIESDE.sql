@@ -12,7 +12,7 @@ CREATE TABLE contents
 	name VARCHAR(100),
 	description TEXT,
 	PRIMARY KEY(id)
-)
+);
 
 CREATE TABLE franchises
 (
@@ -87,8 +87,7 @@ CREATE TABLE characters
 	age INT,
 	gender INT,
 	main INT,
-	PRIMARY KEY(id),
-	FOREIGN KEY(font) REFERENCES series(id)
+	PRIMARY KEY(id)
 );
 
 CREATE TABLE characterstraits
